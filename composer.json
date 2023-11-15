@@ -1,0 +1,33 @@
+{
+    "name": "roshandelpoor/deploy",
+    "description": "optimize laravel app on the server",
+    "type": "library",
+    "require": {
+        "php": ">=5.6",
+        "illuminate/support": ">=5.5",
+        "illuminate/console": ">=5.5"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "roshandelpoor",
+            "email": "m.roshandepoor@asredanesh.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "autoload": {
+        "psr-4": {
+            "Roshandelpoor\\Deploy\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Roshandelpoor\\Deploy\\DeployServiceProvider"
+            ],
+            "aliases": {
+                "Deploy": "Roshandelpoor\\Deploy\\Deploy"
+            }
+        }
+    }
+}
